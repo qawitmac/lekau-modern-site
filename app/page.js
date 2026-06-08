@@ -419,7 +419,7 @@ export default function LekauGroupModernWebsite() {
                 <p className="text-sm font-black uppercase tracking-[0.28em] text-amber-300">Contact</p>
                 <h2 className="mt-3 text-4xl font-black tracking-tight">Ready to quote your next project?</h2>
                 <p className="mt-4 leading-8 text-slate-300">
-                  A simplified contact area turns visitors into leads with direct phone, email, location and enquiry form options.
+              
                 </p>
                 <div className="mt-8 grid gap-4">
                   <a href="tel:+27825153849" className="flex items-center gap-4 rounded-2xl bg-white/5 p-4 hover:bg-white/10">
