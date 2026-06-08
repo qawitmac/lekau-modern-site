@@ -90,6 +90,39 @@ const services = [
     },
 ];
 
+const projectImages = [
+    {
+        title: "Road Construction",
+        description: "Roadworks and construction support for practical site delivery.",
+        image: "/images/RoadConstruction.jpg",
+    },
+    {
+        title: "Guardrail Construction",
+        description: "Roadside safety infrastructure and guardrail work.",
+        image: "/images/guardrails.jpg",
+    },
+    {
+        title: "Stockpile Maintenance",
+        description: "Mining and site support for stockpile management.",
+        image: "/images/stockpile-maintenance.png",
+    },
+    {
+        title: "Fencing",
+        description: "Fencing services for sites, facilities and public spaces.",
+        image: "/images/fencing.jpg",
+    },
+    {
+        title: "Grass Cutting Services",
+        description: "Grass cutting, gardening and grounds maintenance.",
+        image: "/images/grass-cutting.jpg",
+    },
+    {
+        title: "General Cleaning and Maintenance",
+        description: "Cleaning and maintenance support for operational environments.",
+        image: "/images/general-cleaning.jpg",
+    },
+];
+
 const projects = [
     "Bakwena N4 / Roadmac Surfacing - Construction of Guardrails",
     "Bapong No. 01 Section - Rorisang Pavement Road Project",
@@ -245,49 +278,45 @@ export default function LekauGroupModernWebsite() {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.96 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-              className="relative"
-            >
-              <div className="rounded-[2rem] border border-white/10 bg-white/10 p-3 shadow-2xl shadow-black/40 backdrop-blur">
-                <div className="rounded-[1.5rem] bg-gradient-to-br from-slate-800 via-slate-900 to-black p-6">
-                  <div className="flex items-center justify-between rounded-3xl bg-white/10 p-5">
-                    <div>
-                      <p className="text-sm font-semibold text-slate-300">Operational readiness</p>
-                      <p className="mt-1 text-3xl font-black text-white">Site Teams Active</p>
-                    </div>
-                    <div className="rounded-2xl bg-emerald-400/15 p-3 text-emerald-300">
-                      <CheckCircle2 className="h-7 w-7" />
-                    </div>
-                  </div>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.96 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.7, delay: 0.1 }}
+                            className="relative"
+                        >
+                            <div
+                                className="relative min-h-[520px] overflow-hidden rounded-[2rem] border border-white/10 bg-cover bg-center shadow-2xl shadow-black/40"
+                                style={{
+                                    backgroundImage: "url('/images/20190402_1558361-e1555435208536.jpeg')",
+                                }}
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10" />
 
-                  <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                    {stats.map((stat) => {
-                      const Icon = stat.icon;
-                      return (
-                        <Card key={stat.label} className="rounded-3xl border-white/10 bg-white/[0.07] text-white">
-                          <CardContent className="p-5">
-                            <Icon className="mb-4 h-6 w-6 text-amber-300" />
-                            <p className="text-3xl font-black">{stat.value}</p>
-                            <p className="mt-1 text-sm text-slate-300">{stat.label}</p>
-                          </CardContent>
-                        </Card>
-                      );
-                    })}
-                  </div>
+                                <div className="absolute left-0 right-0 top-0 flex justify-between p-5">
+                                    <span className="rounded-full bg-amber-400 px-4 py-2 text-sm font-black text-slate-950">
+                                        Lekau Group
+                                    </span>
 
-                  <div className="mt-5 rounded-3xl border border-amber-300/20 bg-amber-300/10 p-5">
-                    <p className="text-sm font-bold uppercase tracking-[0.22em] text-amber-200">SHEQ Commitment</p>
-                    <p className="mt-3 text-2xl font-black">No job is so important that it cannot be done safely.</p>
-                    <p className="mt-3 leading-7 text-slate-300">
-                      A modern safety culture focused on people, environment, quality and responsible delivery.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+                                    <span className="rounded-full border border-white/20 bg-black/30 px-4 py-2 text-sm font-bold text-white backdrop-blur">
+                                        Site Delivery
+                                    </span>
+                                </div>
+
+                                <div className="absolute bottom-0 left-0 right-0 p-6">
+                                    <p className="text-sm font-black uppercase tracking-[0.22em] text-amber-300">
+                                        Real Project Work
+                                    </p>
+
+                                    <h2 className="mt-3 text-3xl font-black text-white sm:text-4xl">
+                                        Construction, roadworks, maintenance and mining support delivered on site.
+                                    </h2>
+
+                                    <p className="mt-4 max-w-xl leading-7 text-slate-200">
+                                        A stronger visual identity using Lekau Group project photos makes the website feel more credible and ready for client enquiries.
+                                    </p>
+                                </div>
+                            </div>
+                        </motion.div>
           </div>
         </section>
 
@@ -411,6 +440,58 @@ export default function LekauGroupModernWebsite() {
             </div>
           </div>
         </section>
+
+                <section id="gallery" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+                    <div className="mb-10 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+                        <div>
+                            <p className="text-sm font-black uppercase tracking-[0.28em] text-amber-300">
+                                Project Gallery
+                            </p>
+
+                            <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
+                                Real work. Real sites. Real delivery.
+                            </h2>
+                        </div>
+
+                        <p className="leading-8 text-slate-300">
+                            Showcasing Lekau Group project work across road construction, fencing, grass cutting, stockpile maintenance and general site services.
+                        </p>
+                    </div>
+
+                    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                        {projectImages.map((item, index) => (
+                            <motion.div
+                                key={item.title}
+                                initial={{ opacity: 0, y: 16 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.45, delay: index * 0.04 }}
+                                className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.06] shadow-xl shadow-black/10"
+                            >
+                                <div
+                                    className="h-64 bg-cover bg-center transition duration-500 group-hover:scale-105"
+                                    style={{
+                                        backgroundImage: `url('${item.image}')`,
+                                    }}
+                                />
+
+                                <div className="p-6">
+                                    <p className="text-xs font-black uppercase tracking-[0.22em] text-amber-300">
+                                        Project {index + 1}
+                                    </p>
+
+                                    <h3 className="mt-3 text-xl font-black text-white">
+                                        {item.title}
+                                    </h3>
+
+                                    <p className="mt-3 leading-7 text-slate-300">
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </section>
 
         <section id="contact" className="mx-auto max-w-7xl px-5 pb-20 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
