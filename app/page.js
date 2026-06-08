@@ -352,7 +352,7 @@ export default function LekauGroupModernWebsite() {
                   Projects that prove practical field capability.
                 </h2>
                 <p className="mt-5 leading-8 text-slate-300">
-                  A stronger portfolio area helps visitors quickly understand service type, delivery scope and project credibility.
+                
                 </p>
               </div>
               <div className="grid gap-4">
@@ -388,7 +388,7 @@ export default function LekauGroupModernWebsite() {
                     A safer way to build, maintain and operate.
                   </h2>
                   <p className="mt-5 leading-8 text-slate-300">
-                    The refreshed website positions SHEQ as a commercial advantage: protecting people, client assets,
+                    Protecting people, client assets,
                     communities and the environment.
                   </p>
                 </div>
