@@ -119,7 +119,7 @@ const projectImages = [
     {
         title: "General Cleaning and Maintenance",
         description: "Cleaning and maintenance support for operational environments.",
-        image: "/images/general-cleaning.jpg",
+        image: "/images/cleainign.jpeg",
     },
 ];
 
