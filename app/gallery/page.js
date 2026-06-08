@@ -120,7 +120,7 @@ export default function GalleryPage() {
               </h1>
 
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-                A clean dedicated collage page for Lekau Group project images. The home page stays focused while visitors can still explore the full visual portfolio here.
+                Lekau Group project images portfolio.
               </p>
             </div>
 
