@@ -139,7 +139,7 @@ const stats = [
     { label: "Safety Mindset", value: "Zero Harm", icon: ShieldCheck },
 ];
 
-const navItems = ["Home", "Services", "Projects", "SHEQ", "Contact"];
+const navItems = ["Home", "Services", "Projects", "SHEQ", "Gallery", "Contact"];
 
 export default function LekauGroupModernWebsite() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -167,29 +167,34 @@ export default function LekauGroupModernWebsite() {
 
             <header className="sticky top-0 z-50 border-b border-white/10 bg-[#070b12]/80 backdrop-blur-xl">
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-                    <a href="#home" className="flex items-center gap-3">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400 text-slate-950 shadow-lg shadow-amber-500/20">
-                            <HardHat className="h-6 w-6" />
+                    <a href="#home" className="flex items-center gap-4">
+                        <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-white p-2 shadow-xl shadow-amber-500/20 ring-1 ring-white/10">
+                            <img
+                                src="/images/lekau-group-logo.png"
+                                alt="Lekau Group logo"
+                                className="h-full w-full object-contain"
+                            />
                         </div>
+
                         <div>
-                            <p className="text-lg font-black tracking-tight">LEKAU GROUP</p>
+                            <p className="text-xl font-black tracking-tight">LEKAU GROUP</p>
                             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-amber-300">
                                 Stuck on success
                             </p>
                         </div>
                     </a>
 
-                <nav className="hidden items-center gap-8 lg:flex">
-                    {navItems.map((item) => (
-                        <a
-                            key={item}
-                            href={`#${item.toLowerCase()}`}
-                            className="text-sm font-semibold text-slate-300 transition hover:text-amber-300"
-                        >
-                            {item}
-                        </a>
-                    ))}
-                </nav>
+                    <nav className="hidden items-center gap-8 lg:flex">
+                        {navItems.map((item) => (
+                            <a
+                                key={item}
+                                href={item === "Gallery" ? "/gallery" : `#${item.toLowerCase()}`}
+                                className="text-sm font-semibold text-slate-300 transition hover:text-amber-300"
+                            >
+                                {item}
+                            </a>
+                        ))}
+                    </nav>
 
                 <div className="hidden items-center gap-3 lg:flex">
                     <a
@@ -216,16 +221,16 @@ export default function LekauGroupModernWebsite() {
         menuOpen && (
             <div className="border-t border-white/10 bg-[#070b12] px-5 py-4 lg:hidden">
                 <div className="grid gap-3">
-                    {navItems.map((item) => (
-                        <a
-                            key={item}
-                            href={`#${item.toLowerCase()}`}
-                            onClick={() => setMenuOpen(false)}
-                            className="rounded-xl px-3 py-2 font-semibold text-slate-200 hover:bg-white/10"
-                        >
-                            {item}
-                        </a>
-                    ))}
+                                {navItems.map((item) => (
+                                    <a
+                                        key={item}
+                                        href={item === "Gallery" ? "/gallery" : `#${item.toLowerCase()}`}
+                                        onClick={() => setMenuOpen(false)}
+                                        className="rounded-xl px-3 py-2 font-semibold text-slate-200 hover:bg-white/10"
+                                    >
+                                        {item}
+                                    </a>
+                                ))}
                     <Button className="mt-2 rounded-2xl px-5 py-3 font-black">Request Quote</Button>
                 </div>
             </div>
